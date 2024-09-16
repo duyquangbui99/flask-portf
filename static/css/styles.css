@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* Optional if you want a global smooth scroll */
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;

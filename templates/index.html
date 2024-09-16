@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/sidebarNav.css">
     <link rel="stylesheet" href="/static/css/aboutMe.css">
+    <link rel="stylesheet" href="/static/css/project.css">
+
 </head>
 
 <body>
@@ -41,7 +43,7 @@
                             <h3>About Me</h3>
                         </div>
                     </a>
-                    <a href="project.html">
+                    <a href="#projects">
                         <div class="logo-div">
                             <img src="/static/images/project.svg" alt="project Logo" class="project-icon">
                             <h3>Projects</h3>
@@ -72,7 +74,7 @@
                         <h3>About Me</h3>
                     </div>
                 </a>
-                <a href="project.html">
+                <a href="#projects">
                     <div class="logo-div">
                         <img src="/static/images/project.svg" alt="project Logo" class="project-icon">
                         <h3>Projects</h3>
@@ -115,7 +117,7 @@
                         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient...
                     </p>
                     <div class="flex-row gap-30 ">
-                        <a href="project.html">
+                        <a href="#projects">
                             <div class="logo-div">
                                 <img src="/static/images/project.svg" alt="project Logo" class="project-icon">
                                 <h3>Projects</h3>
@@ -181,6 +183,44 @@
                     </div>
                 </div>
                 <div class="line-break-3"></div>
+            </div>
+
+            <div class="project-section" id="projects">
+                <h1>PROJECT</h1>
+                <div class="chatbot-project-div">
+                    <div class="chatbot-info-div">
+                        <h3>GPT-4o-mini Assistant</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. I'm taking on freelance work at the moment. Want some help
+                            building your software?
+                        </p>
+                        <a href="https://github.com/duyquangbui99" target="_blank">
+                            <img src="/static/images/github.svg" alt="Github Logo" class="github-icon">
+                        </a>
+                    </div>
+                    <div class="chat-container">
+                        <div id="chat-box">
+                            <div class='bot-response-container'>
+                                <img src="/static/images/bot.svg" alt="botIcon" class="bot-icon">
+                                <div class="bot-message">
+                                    <p>Feel free to ask anything!</p>
+                                </div>
+                            </div>
+                            <!-- Responses will be displayed here -->
+                        </div>
+                        <div class="input-container">
+                            <input type="text" id="user-input" placeholder="Ask a question...">
+                            <div id="send-button">
+                                <img src="/static/images/up-arrow.svg" alt="up-arrow" class="up-arrow-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>MORE PROJECTS</h1>
+
+
                 <div class="copy-right">
                     <p>Copyright © Quang Bui</p>
                 </div>
@@ -188,6 +228,7 @@
         </div>
     </div>
     <script src="/static/js/scipt.js"></script>
+    <script src="/static/js/chatbot.js"></script>
 </body>
 
 </html>
