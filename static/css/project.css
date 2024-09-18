@@ -29,6 +29,7 @@
 }
 
 
+
 /* Style the chat box */
 #chat-box {
     background-color: #fff;
@@ -169,7 +170,7 @@ input:focus {
 
 /* Content area of the project card */
 .content {
-    padding: 1.5rem;
+    padding: .8rem;
 }
 
 .content h3 {

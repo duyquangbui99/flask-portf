@@ -76,6 +76,11 @@
     height: auto;
 }
 
+/* Avatar container in the middle */
+.hide-circle-container {
+    display: none;
+}
+
 .line-break-3 {
     width: 100%;
     height: 1px;
