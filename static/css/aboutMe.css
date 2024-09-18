@@ -76,11 +76,14 @@
     height: auto;
 }
 
+<<<<<<< HEAD
 /* Avatar container in the middle */
 .hide-circle-container {
     display: none;
 }
 
+=======
+>>>>>>> 9917acae4329d42150f58e5d79d1418f48ec9274
 .line-break-3 {
     width: 100%;
     height: 1px;
