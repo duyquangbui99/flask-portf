@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/static/css/sidebarNav.css">
     <link rel="stylesheet" href="/static/css/aboutMe.css">
     <link rel="stylesheet" href="/static/css/project.css">
+    <link rel="stylesheet" href="/static/css/hireme.css">
 </head>
 
 <body>
@@ -36,26 +37,26 @@
                 </div>
                 <!-- Hidden Sidebar items for navigation for smaller screen-->
                 <div class="padd20 hidden-deft">
-                    <a href="index.html">
+                    <a href="#aboutme" id="aboutMe">
                         <div class="logo-div">
                             <img src="/static/images/person.svg" alt="person Logo" class="person-icon">
                             <h3>About Me</h3>
                         </div>
                     </a>
-                    <a href="#projects">
+                    <a href="#projects" id="hahaproject">
                         <div class="logo-div">
                             <img src="/static/images/project.svg" alt="project Logo" class="project-icon">
                             <h3>Projects</h3>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/resume">
                         <div class="logo-div logo-section">
                             <img src="/static/images/resume.svg" alt="resume Logo" class="resume-icon">
                             <h3>Resume</h3>
                         </div>
                     </a>
-                    <div class="hire-me-button">
-                        <a href="">
+                    <div class="hire-me-button" id="btn-contact">
+                        <a href="#contact">
                             <div class="logo-div logo-section">
                                 <img src="/static/images/hireme.png" alt="hireme Logo" class="hireme-icon">
                                 <h3 class="white">Hire me</h3>
@@ -67,26 +68,26 @@
             </div>
             <!-- Sidebar items for navigation -->
             <div class="side-bar nav-items" id="nav-items">
-                <a href="index.html">
+                <a href="#aboutme" id="aboutMe">
                     <div class="logo-div">
                         <img src="/static/images/person.svg" alt="person Logo" class="person-icon">
                         <h3>About Me</h3>
                     </div>
                 </a>
-                <a href="#projects">
+                <a href="#projects" id="hahaproject">
                     <div class="logo-div">
                         <img src="/static/images/project.svg" alt="project Logo" class="project-icon">
                         <h3>Projects</h3>
                     </div>
                 </a>
-                <a href="resume.html">
+                <a href="/resume">
                     <div class="logo-div logo-section">
                         <img src="/static/images/resume.svg" alt="resume Logo" class="resume-icon">
                         <h3>Resume</h3>
                     </div>
                 </a>
-                <div class="hire-me-button">
-                    <a href="">
+                <div class="hire-me-button" id="btn-contact">
+                    <a href="#contact">
                         <div class="logo-div logo-section">
                             <img src="/static/images/hireme.png" alt="hireme Logo" class="hireme-icon">
                             <h2 class="white">Hire me</h2>
@@ -105,15 +106,21 @@
             </div>
         </div>
         <!-- About Me -->
-        <div class="main-about-me">
+        <div class="main-about-me" id="aboutme">
             <div class="about-me">
                 <div class="about-me-text">
                     <h1>QUANG BUI</h1>
-                    <h2>Dedicated and Enthusiastic Software Enigineer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient...
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient...
+                    <h2>Dedicated and Enthusiastic Software Engineer</h2>
+                    <p>I’m Quang, a tech enthusiast and grad student at Oklahoma City University, working towards my
+                        Master’s in Computer Science. I love solving problems with code and turning creative ideas into
+                        real, impactful applications. Whether I’m building AI tools to make information more accessible
+                        or crafting customer feedback apps to improve business operations, I’m all about finding smart,
+                        efficient solutions. Let’s chat if you’re looking for someone who’s driven by curiosity, loves a
+                        good challenge, and is always looking to learn and grow in the tech world.
+                    </p>
+                    <p style="font-weight: 500;">
+                        I’m also actively looking for a summer 2025 internship to further apply my skills and gain
+                        hands-on experience.
                     </p>
                     <div class="flex-row gap-30 ">
                         <a href="#projects">
@@ -122,7 +129,7 @@
                                 <h3>Projects</h3>
                             </div>
                         </a>
-                        <a href="resume.html">
+                        <a href="/resume">
                             <div class="logo-div logo-section">
                                 <img src="/static/images/resume.svg" alt="resume Logo" class="resume-icon">
                                 <h3>Resume</h3>
@@ -145,12 +152,17 @@
                 <div class="tech-stack">
                     <div class="flex-iem">
                         <img src="/static/images/python.svg" alt="python" class="tech-icon paddbottom20px">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        <p>I’ve been using Python since I first started coding, and it quickly became my go-to language.
+                            What I love most about Python is its versatility. Over the years, I’ve built everything from
+                            simple scripts to AI-driven tools using Python, and it’s always exciting to see the impact
+                            it can have across various fields.
                         </p>
                     </div>
                     <div class="flex-iem ">
                         <img src="/static/images/csharp.svg" alt="c#" class="tech-icon paddbottom20px">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        <p>I got into C# during a game programming class, and it’s been a fascinating journey. C# really
+                            stood out to me, especially for its strong support of object-oriented programming (OOP).
+                            I’ve used it primarily with Unity for game development.
                         </p>
                         </p>
                     </div>
@@ -160,24 +172,30 @@
                             <img src="/static/images/css.svg" alt="python" class="tech-icon">
                             <img src="/static/images/js.svg" alt="python" class="tech-icon">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        <p>I work with HTML, CSS, and JavaScript almost daily to build projects. These core web
+                            technologies are essential for creating responsive, dynamic applications, and they’ve been
+                            the foundation of much of my development work.
                         </p>
                     </div>
                     <div class="flex-iem ">
                         <img src="/static/images/react.svg" alt="react" class="tech-icon paddbottom20px">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        <p>I gained experience with React in my last job, building a customer feedback app using the
+                            MERN stack. By combining React’s flexible, component-based structure with Tailwind CSS, I
+                            was able to create a highly responsive and efficient front-end.
                         </p>
                     </div>
                     <div class="flex-iem ">
                         <img src="/static/images/mongoDB.svg" alt="mongo" class="tech-icon paddbottom20px">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        <p>I have some experience with MongoDB, mainly through integrating it with backend APIs. While I
+                            don’t work with it directly, I understand how to design schemas and manage data effectively
+                            within a full-stack application.
                         </p>
                     </div>
                     <div class="flex-iem ">
                         <img src="/static/images/mysql.svg" alt="mysql" class="tech-icon paddbottom20px">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        <p>I’m currently building a school system database with MySQL as part of my database class. I
+                            have a strong understanding of the relational database model and SQL, and I’m applying this
+                            knowledge to real-world projects.
                         </p>
                     </div>
                 </div>
@@ -190,9 +208,9 @@
                     <div class="chatbot-info-div">
                         <h3>GPT-4o-mini Assistant</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor. I'm taking on freelance work at the moment. Want some help
-                            building your software?
+                            This project is a Flask-based AI Chatbot Web Application that leverages OpenAI's GPT models
+                            to provide conversational interactions. The chatbot is designed to respond to user inquiries
+                            with context-specific answers based on a predefined script about me.
                         </p>
                         <a href="https://github.com/duyquangbui99" target="_blank">
                             <img src="/static/images/github.svg" alt="Github Logo" class="github-icon">
@@ -226,14 +244,14 @@
                             <div class="project-card">
                                 <img src="/static/images/project1.png" alt="Project 1" class="project-image">
                                 <div class="content">
-                                    <h3>E-commerce Platform</h3>
-                                    <p>A fully functional e-commerce website with product listings, cart functionality,
-                                        and
-                                        secure checkout process.</p>
+                                    <h3>VidSummarizer</h3>
+                                    <p>AI-driven web application designed to
+                                        automatically generate
+                                        concise summaries from YouTube video transcripts.</p>
                                     <div class="stack">
-                                        <span class="badge">React</span>
-                                        <span class="badge">Node.js</span>
-                                        <span class="badge">MongoDB</span>
+                                        <span class="badge">Python</span>
+                                        <span class="badge">Langchain</span>
+                                        <span class="badge">Js</span>
                                     </div>
                                 </div>
                             </div>
@@ -244,13 +262,13 @@
                             <div class="project-card">
                                 <img src="/static/images/project2.png" alt="Project 2" class="project-image">
                                 <div class="content">
-                                    <h3>Task Management App</h3>
-                                    <p>A collaborative task management application with real-time updates, user
-                                        authentication, and project tracking.</p>
+                                    <h3>Math Bingo</h3>
+                                    <p>Classic game of bingo into a math learning game by calling out math problems for
+                                        kids to solve and mark on their bingo cards.</p>
                                     <div class="stack">
-                                        <span class="badge">Vue.js</span>
-                                        <span class="badge">Firebase</span>
-                                        <span class="badge">Vuex</span>
+                                        <span class="badge">Javascript</span>
+                                        <span class="badge">HTML</span>
+                                        <span class="badge">CSS</span>
                                     </div>
                                 </div>
                             </div>
@@ -260,13 +278,44 @@
                             <div class="project-card">
                                 <img src="/static/images/project3.png" alt="Project 3" class="project-image">
                                 <div class="content">
-                                    <h3>Weather Forecast Dashboard</h3>
-                                    <p>An interactive weather forecast dashboard with location-based services and data
-                                        visualization.</p>
+                                    <h3>Rule-Based ChatBot</h3>
+                                    <p> Web-based virtual assistant designed to provide quick responses to common
+                                        questions about an business by fetching data from Json.</p>
                                     <div class="stack">
-                                        <span class="badge">React</span>
-                                        <span class="badge">Express.js</span>
-                                        <span class="badge">Chart.js</span>
+                                        <span class="badge">Javascript</span>
+                                        <span class="badge">HTML</span>
+                                        <span class="badge">CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Project Card 4-->
+                        <a href="https://github.com/duyquangbui99/NavMeshComponent" target="_blank">
+                            <div class="project-card">
+                                <img src="/static/images/project4.png" alt="Project 4" class="project-image">
+                                <div class="content">
+                                    <h3>Game Development</h3>
+                                    <p>This C# game focuses on robust navigation systems through navmesh
+                                        creation, ensuring precise character and object pathfinding.</p>
+                                    <div class="stack">
+                                        <span class="badge">C#</span>
+                                        <span class="badge">Unity</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Project Card 5-->
+                        <a href="https://github.com/duyquangbui99/SudokuSovlerPython" target="_blank">
+                            <div class="project-card">
+                                <img src="/static/images/project5.png" alt="Project 5" class="project-image">
+                                <div class="content">
+                                    <h3>Sudoku Solver</h3>
+                                    <p>This is a Python program that allows you to play and solve Sudoku puzzles. It
+                                        uses the Tkinter library to create GUI for the
+                                        game.</p>
+                                    <div class="stack">
+                                        <span class="badge">Python</span>
+                                        <span class="badge">Tkinter</span>
                                     </div>
                                 </div>
                             </div>
@@ -274,6 +323,22 @@
                     </div>
                 </div>
 
+                <!-- Hire me Section-->
+                <section id="contact">
+                    <p style="font-size: 1.3rem;">Get in Touch</p>
+                    <h1>Contact Me</h1>
+                    <div class="contact-info-upper-container">
+                        <div class="contact-info-container">
+                            <img src="/static/images/mail.png" alt="Email icon" class="email-icon" />
+                            <p><a href="mailto:qbuiforwork@gmail.com">qbuiforwork@gmail.com</a></p>
+                        </div>
+                        <div class="contact-info-container">
+                            <img src="/static/images/linkedin.svg" alt="LinkedIn icon" class="contact-icon" />
+                            <p><a href="https://www.linkedin.com/in/quang-bui-4b7059256/" target="_blank">LinkedIn</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
                 <div class="copy-right">
                     <p>Copyright © Quang Bui</p>

@@ -6,8 +6,18 @@ app = Flask(__name__)
 # Define the default route to return the index.html file
 
 
-@app.route("/")
+@app.route("/index")
 def index():
+    return render_template("index.html")
+
+
+@app.route("/resume")
+def resume():
+    return render_template("resume.html")
+
+
+@app.route("/")
+def home():
     return render_template("index.html")
 
 # Define the /api route to handle POST requests
@@ -35,11 +45,3 @@ def api():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    '''while True:
-        user_input = input("User: ")
-        query = script + user_input
-        if user_input.lower() in ["quit", "exit", "bye"]:
-            break
-
-        response = chat_with_gpt(query)
-        print("Chatbot: ", response)'''

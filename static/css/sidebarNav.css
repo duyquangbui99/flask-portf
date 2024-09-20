@@ -94,8 +94,8 @@
 .hire-me-button {
     margin-top: 15px;
     padding: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
     border-radius: 10px;
     background-color: #a9a9ab;
 }
@@ -171,6 +171,10 @@
     .sidebar-open {
         top: 70px;
         /* Slide the sidebar into view */
+    }
+
+    .sidebar-close {
+        top: -70px;
     }
 
     /* Show the top navbar */
